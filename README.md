@@ -14,20 +14,30 @@ A responsive React-based pizza menu application that showcases a restaurant's pi
 - CSS
 - JavaScript
 
-App
-├── Header
-│   └── h1 "Fast React Pizza Co."
+# Component Structure
+└── App/
+├── Header/
+│ └── h1 (Fast React Pizza Co.)
 │
-├── Menu
-│   ├── h2 "Our Menu"
-│   └── Pizza (mapped from pizzaData)
-│       ├── img
-│       └── div
-│           ├── h3 (pizza name)
-│           ├── p (ingredients)
-│           └── span (price)
+├── Menu/
+│ ├── h2 (Our Menu)
+│ └── Pizza/
+│ ├── img
+│ └── div
+│ ├── h3 (pizza name)
+│ ├── p (ingredients)
+│ └── span (price)
 │
-└── Footer
-    └── Order (conditionally rendered)
-        ├── p (opening hours message)
-        └── button "Order"
+└── Footer/
+└── Order/
+├── p (opening hours)
+└── button (Order)
+
+
+Each component's responsibilities:
+- `App`: Main container component
+- `Header`: Displays restaurant name
+- `Menu`: Manages pizza list and rendering
+- `Pizza`: Individual pizza item display
+- `Footer`: Handles opening hours logic
+- `Order`: Displays order button and current status
